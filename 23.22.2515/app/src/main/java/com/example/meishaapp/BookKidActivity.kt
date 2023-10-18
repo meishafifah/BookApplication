@@ -4,7 +4,6 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import com.example.meishaapp.databinding.ActivityBookKidBinding
-
 class BookKidActivity : AppCompatActivity() {
     private lateinit var binding: ActivityBookKidBinding
 
@@ -25,7 +24,6 @@ class BookKidActivity : AppCompatActivity() {
             replaceFragment(ScienceFragment())
         }
     }
-
     // ganti fragment
     fun replaceFragment(frg:Fragment) {
         val fragmentManager = supportFragmentManager

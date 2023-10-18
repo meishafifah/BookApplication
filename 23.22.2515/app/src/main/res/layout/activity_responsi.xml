@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ResponsiActivity">
+
+    <TextView
+        android:id="@+id/titleResp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Contact Us"
+        android:layout_marginTop="50dp"
+        android:layout_marginStart="30dp"
+        android:textStyle="bold"
+        android:textAlignment="textStart"
+        android:textSize="20sp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        />
+    <TextView
+        android:id="@+id/descResp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:text="Kami menyediakan jadwal kunjungan dari sekolah atau instansi lain, silahkan reservasi pada nomor telp dibawah ini"
+        android:textAlignment="textStart"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@id/titleResp"
+        />
+    <LinearLayout
+        android:id="@+id/linearResp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        app:layout_constraintTop_toBottomOf="@id/descResp"
+        >
+        <ImageView
+            android:id="@+id/telpResp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/baseline_phone_24" />
+        <TextView
+            android:id="@+id/textTelpResp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:text="(0274) 884201"
+            android:layout_marginTop="10dp"
+            app:layout_constraintTop_toBottomOf="@id/titleResp"
+            />
+    </LinearLayout>
+    <TextView
+        android:id="@+id/textResp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kunjungan Perpustakaan"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="30dp"
+        android:textStyle="bold"
+        android:textAlignment="textStart"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@id/linearResp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        />
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerResp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textResp">
+
+    </androidx.recyclerview.widget.RecyclerView>
+</androidx.constraintlayout.widget.ConstraintLayout>
